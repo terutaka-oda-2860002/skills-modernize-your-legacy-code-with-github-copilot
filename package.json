@@ -5,7 +5,10 @@
   "main": "src/accounting/index.js",
   "scripts": {
     "start": "node src/accounting/index.js",
-    "dev": "node --inspect-brk src/accounting/index.js"
+    "dev": "node --inspect-brk src/accounting/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "keywords": ["accounting", "cobol", "nodejs", "modernization"],
   "author": "",
@@ -13,5 +16,12 @@
   "dependencies": {
     "prompt-sync": "^4.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/*.test.js"],
+    "collectCoverageFrom": ["src/**/*.js", "!src/**/*.test.js"]
+  }
 }
