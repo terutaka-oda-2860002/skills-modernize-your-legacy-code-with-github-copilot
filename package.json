@@ -1,0 +1,17 @@
+{
+  "name": "account-management-system",
+  "version": "1.0.0",
+  "description": "Account Management System - Modernized from COBOL to Node.js",
+  "main": "src/accounting/index.js",
+  "scripts": {
+    "start": "node src/accounting/index.js",
+    "dev": "node --inspect-brk src/accounting/index.js"
+  },
+  "keywords": ["accounting", "cobol", "nodejs", "modernization"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {}
+}
